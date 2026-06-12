@@ -117,59 +117,140 @@
         </section>
 
         <div class="dashboard-grid">
-            <!-- Left Column: Report Form & Take Action review links -->
+            <!-- Left Column: Expose and Protect Campaign -->
             <div class="dashboard-column">
-                <section class="card" id="submit-report-card">
-                    <h2>Report a Tour Operator Scam</h2>
-                    <p>Have you been scammed or faced safety issues with Tour Edge, Tour Avenue, or other operators in Pakistan? Share your experience to warn the community.</p>
+                <section class="card" id="about-campaign">
+                    <h2>Avoid Tour Scams when Booking a Tour to Hunza</h2>
+                    <p>This public awareness portal is built to warn travelers planning a tour to Hunza or a tour to northern areas of Pakistan about widespread tour scams. Specifically, we document the deceptive strategies, hotel booking fraud, and safety risks of <strong>Tour Edge</strong> (Lahore) and its operational front <strong>Tour Avenue Pvt Ltd</strong>.</p>
                     
-                    <!-- Report Submission Form -->
-                    <form id="report-form" class="modern-form">
-                        <!-- Honeypot Spam Prevention field (invisible to human users) -->
-                        <div style="display: none;" aria-hidden="true">
-                            <label for="form-website-url">Leave this field blank:</label>
-                            <input type="text" id="form-website-url" autocomplete="off" tabindex="-1">
-                        </div>
+                    <h3>Major Red Flags Documented:</h3>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                        <li><strong>Unnotified Sub-Contracting:</strong> Secretly offloaded our booking to Tour Avenue, a lower-tier operator, without our knowledge.</li>
+                        <li><strong>Hotel Theft (Jovial Gold Hotel Naran):</strong> Skipped our pre-paid luxury stay at Naran entirely, pocketing our funds with zero refund or apology.</li>
+                        <li><strong>Endangering Lives:</strong> Pushed an experienced driver to operate a coaster non-stop for 24 hours, causing him to fall asleep at the wheel on mountain roads.</li>
+                        <li><strong>Attempted Extortion:</strong> Unilaterally altered the itinerary and demanded extra money on the road, which we firmly rejected.</li>
+                        <li><strong>Graveyard Hotel Downgrade:</strong> Attempted to house us in "Hunza Elite," a property located in an abandoned area right next to a cemetery.</li>
+                    </ul>
 
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                            <div>
-                                <label for="form-name">Your Name / Alias:</label>
-                                <input type="text" id="form-name" placeholder="e.g. Disappointed Traveler" required>
+                    <div class="btn-grid">
+                        <a href="short.html" id="btn-goto-short" class="btn btn-primary">Get Quick Review Summaries</a>
+                        <a href="long.html" id="btn-goto-long" class="btn btn-secondary">Read Full Chronological Story</a>
+                    </div>
+                </section>
+
+                <section class="card" id="bait-vs-reality">
+                    <h2>The Tour Illusion vs. The Truth</h2>
+                    <p>Compare the promises of their sales brochures with the documented realities of our package trip:</p>
+                    
+                    <div class="comparison-container">
+                        <div class="comparison-row header">
+                            <div>Sales Brochure Promise</div>
+                            <div>Traveler's Actual Experience</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>Deluxe Couple's Package (1 Lac PKR)</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Private, comfortable, premium-grade journey.</span>
                             </div>
-                            <div>
-                                <label for="form-operator">Targeted Operator:</label>
-                                <select id="form-operator" required onchange="toggleOtherOperator(this.value)">
-                                    <option value="">Loading operators...</option>
-                                </select>
-                                <div id="other-operator-container" class="conditional-field">
-                                    <label for="form-other-operator" style="margin-top: 0.5rem;">Enter Operator Name:</label>
-                                    <input type="text" id="form-other-operator" placeholder="e.g. Fake Travel Agency">
-                                </div>
+                            <div class="reality-col">
+                                <strong>Sub-Contracting Scam</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Secretly sold to a low-tier operator (Tour Avenue) without consent.</span>
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                            <div>
-                                <label for="form-date">Trip Date (Month/Year):</label>
-                                <input type="text" id="form-date" placeholder="e.g. June 2026" required>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>1st Night Stay at Jovial Gold Hotel Naran</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Premium pre-paid hotel accommodation in Naran.</span>
                             </div>
-                            <div>
-                                <label>Your Rating:</label>
-                                <div class="star-rating-widget" id="star-widget">
-                                    <span class="star-btn active" data-value="1">★</span>
-                                    <span class="star-btn" data-value="2">★</span>
-                                    <span class="star-btn" data-value="3">★</span>
-                                    <span class="star-btn" data-value="4">★</span>
-                                    <span class="star-btn" data-value="5">★</span>
-                                </div>
-                                <input type="hidden" id="form-rating" value="1">
+                            <div class="reality-col">
+                                <strong>Hotel Booking Theft</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Hotel stay skipped entirely; company pocketed booking funds.</span>
                             </div>
                         </div>
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="form-issue">Describe Your Issue:</label>
-                            <textarea id="form-issue" rows="5" placeholder="Detail your experience, skipped Naran hotels, safety risks, graveyard accommodations, etc." required></textarea>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>Comfortable Sightseeing Pace</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Regular breaks, standard travel hours.</span>
+                            </div>
+                            <div class="reality-col">
+                                <strong>24-Hour Non-stop Coaster Transit</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Grueling road torture on hard seats with no overnight stop.</span>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Public Report</button>
-                    </form>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>Certified, Safe Local Transport</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Adherence to standard driver fatigue policies.</span>
+                            </div>
+                            <div class="reality-col">
+                                <strong>Severe Passenger Safety Hazards</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Driver forced to drive 24 hours straight, sleep-deprived and nodding off.</span>
+                            </div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>Deluxe Hotel Stays in Hunza</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Scenic and high-rated central properties.</span>
+                            </div>
+                            <div class="reality-col">
+                                <strong>Cemetery Downgrade ("Hunza Elite")</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Dumping in an abandoned hotel near a graveyard; local transit refused.</span>
+                            </div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="bait-col">
+                                <strong>Transparent All-Inclusive Pricing</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Zero hidden costs or on-the-road collections.</span>
+                            </div>
+                            <div class="reality-col">
+                                <strong>Babusar Top Extortion Attempt</strong><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Stranding group in freezing spot, demanding extra 1,000 PKR to enter tents.</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card" id="pre-booking-verification">
+                    <h2>Traveler's Pre-Booking Verification Toolkit</h2>
+                    <p>Before transferring any booking fees or token money, use these 5 steps to verify if the operator is selling you a fake package:</p>
+                    
+                    <div class="verification-steps">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-detail">
+                                <strong>Call Hotels Directly (e.g. Jovial Gold Hotel Naran)</strong>
+                                <p>Do not rely on screenshots or PDF confirmations sent by agents. Contact the hotel directly, ask if a booking has been confirmed and fully paid under your name, and verify the dates.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-detail">
+                                <strong>Request Driver Profile & Vehicle Registration</strong>
+                                <p>Demand the vehicle license plate and the names/CNICs of both the primary and backup drivers. Legitimate companies will supply this. Warn them that you do not accept single-driver 24-hour schedules.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-detail">
+                                <strong>Get a Written "No-Subcontracting" Clause</strong>
+                                <p>Ensure you have a written statement on WhatsApp or official email stating that your tour will be executed solely by the booking agency, not outsourced to third-class entities like Tour Avenue.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-detail">
+                                <strong>Google Maps Search Promised Hotels</strong>
+                                <p>Lookup every hotel in your itinerary (e.g. Hunza Elite) on satellite maps. Check recent visitor photos and search reviews for mentions of cemetery borders, construction status, or remote isolated areas.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">5</div>
+                            <div class="step-detail">
+                                <strong>Compare with Self-Booking Expenses</strong>
+                                <p>Book a Daewoo or Faisal Movers executive ticket, and call luxury hotels in Naran and Hunza directly. Self-planning is 30% to 40% cheaper, safer, and allows you to walk away from bad services.</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="card" id="take-action">
@@ -184,10 +265,13 @@
                         </a>
                     </div>
                 </section>
+            </div>
 
+            <!-- Right Column: Evidence, Real Reviews & Reporting Form -->
+            <div class="dashboard-column">
                 <section class="card" id="google-reviews-ledger">
                     <h2>Verified Google Maps Complaints</h2>
-                    <p>Below are documented 1-star reviews extracted from their official Google Maps listings, detailing contract breaches and safety violations:</p>
+                    <p>Documented 1-star reviews from their official Google Maps listings, detailing contract breaches and safety violations:</p>
                     
                     <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem;">
                         <!-- Review 1 -->
@@ -242,10 +326,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
 
-            <!-- Right Column: Live Feed & About Campaign -->
-            <div class="dashboard-column">
                 <section class="card" id="live-feed-card">
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
                         <h2 style="margin: 0;">Live Community Reports</h2>
@@ -262,23 +343,57 @@
                     </div>
                 </section>
 
-                <section class="card" id="about-campaign">
-                    <h2>Avoid Tour Scams when Booking a Tour to Hunza</h2>
-                    <p>This public awareness portal is built to warn travelers planning a tour to Hunza or a tour to northern areas of Pakistan about widespread tour scams. Specifically, we document the deceptive strategies, hotel booking fraud, and safety risks of <strong>Tour Edge</strong> (Lahore) and its operational front <strong>Tour Avenue Pvt Ltd</strong>.</p>
+                <section class="card" id="submit-report-card">
+                    <h2>Report a Tour Operator Scam</h2>
+                    <p>Have you been scammed or faced safety issues with Tour Edge, Tour Avenue, or other operators in Pakistan? Share your experience to warn the community.</p>
                     
-                    <h3>Major Red Flags Documented:</h3>
-                    <ul>
-                        <li><strong>Unnotified Sub-Contracting:</strong> Secretly offloaded our booking to Tour Avenue, a lower-tier operator, without our knowledge.</li>
-                        <li><strong>Hotel Theft (Jovial Gold Hotel Naran):</strong> Skipped our pre-paid luxury stay at Naran entirely, pocketing our funds with zero refund or apology.</li>
-                        <li><strong>Endangering Lives:</strong> Pushed an experienced driver to operate a coaster non-stop for 24 hours, causing him to fall asleep at the wheel on mountain roads.</li>
-                        <li><strong>Attempted Extortion:</strong> Unilaterally altered the itinerary and demanded extra money on the road, which we firmly rejected.</li>
-                        <li><strong>Graveyard Hotel Downgrade:</strong> Attempted to house us in "Hunza Elite," a property located in an abandoned area right next to a cemetery.</li>
-                    </ul>
+                    <!-- Report Submission Form -->
+                    <form id="report-form" class="modern-form">
+                        <!-- Honeypot Spam Prevention field (invisible to human users) -->
+                        <div style="display: none;" aria-hidden="true">
+                            <label for="form-website-url">Leave this field blank:</label>
+                            <input type="text" id="form-website-url" autocomplete="off" tabindex="-1">
+                        </div>
 
-                    <div class="btn-grid">
-                        <a href="short.html" id="btn-goto-short" class="btn btn-primary">Get Quick Review Summaries</a>
-                        <a href="long.html" id="btn-goto-long" class="btn btn-secondary">Read Full Chronological Story</a>
-                    </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label for="form-name">Your Name / Alias:</label>
+                                <input type="text" id="form-name" placeholder="e.g. Disappointed Traveler" required>
+                            </div>
+                            <div>
+                                <label for="form-operator">Targeted Operator:</label>
+                                <select id="form-operator" required onchange="toggleOtherOperator(this.value)">
+                                    <option value="">Loading operators...</option>
+                                </select>
+                                <div id="other-operator-container" class="conditional-field">
+                                    <label for="form-other-operator" style="margin-top: 0.5rem;">Enter Operator Name:</label>
+                                    <input type="text" id="form-other-operator" placeholder="e.g. Fake Travel Agency">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label for="form-date">Trip Date (Month/Year):</label>
+                                <input type="text" id="form-date" placeholder="e.g. June 2026" required>
+                            </div>
+                            <div>
+                                <label>Your Rating:</label>
+                                <div class="star-rating-widget" id="star-widget">
+                                    <span class="star-btn active" data-value="1">★</span>
+                                    <span class="star-btn" data-value="2">★</span>
+                                    <span class="star-btn" data-value="3">★</span>
+                                    <span class="star-btn" data-value="4">★</span>
+                                    <span class="star-btn" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" id="form-rating" value="1">
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="form-issue">Describe Your Issue:</label>
+                            <textarea id="form-issue" rows="5" placeholder="Detail your experience, skipped Naran hotels, safety risks, graveyard accommodations, etc." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Public Report</button>
+                    </form>
                 </section>
             </div>
         </div>
