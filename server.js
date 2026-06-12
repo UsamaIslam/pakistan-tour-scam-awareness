@@ -8,6 +8,17 @@ const PORT = process.env.PORT || 5180;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// CORS Middleware to allow static GitHub Pages requests
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(200);
+    }
+    next();
+});
+
 // Database setup
 const DB_PATH = path.join(__dirname, 'database.sqlite');
 const db = new sqlite3.Database(DB_PATH, (err) => {

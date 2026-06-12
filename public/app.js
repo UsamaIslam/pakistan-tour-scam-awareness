@@ -1,10 +1,14 @@
+const API_BASE = window.location.hostname.endsWith('github.io')
+    ? 'https://touredgetouravenuescam.owasol.com'
+    : '';
+
 let allReports = [];
 let allCompanies = [];
 
 // Fetch and render companies list
 async function fetchCompanies() {
     try {
-        const response = await fetch('/api/companies');
+        const response = await fetch(API_BASE + '/api/companies');
         if (!response.ok) throw new Error('Failed to fetch companies.');
         allCompanies = await response.json();
         renderCompaniesDropdowns(allCompanies);
@@ -40,7 +44,7 @@ async function fetchReports() {
     const listContainer = document.getElementById('reports-list');
     if (!listContainer) return;
     try {
-        const response = await fetch('/api/comments');
+        const response = await fetch(API_BASE + '/api/comments');
         if (!response.ok) throw new Error('Failed to fetch comments.');
         allReports = await response.json();
         renderReports(allReports);
@@ -175,7 +179,7 @@ if (reportForm) {
         }
 
         try {
-            const response = await fetch('/api/comments', {
+            const response = await fetch(API_BASE + '/api/comments', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, operator, trip_date, rating, issue, website_url })
