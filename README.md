@@ -1,6 +1,6 @@
 # Pakistan Tour Scam Awareness Portal
 
-An independent, non-commercial consumer protection portal and community reporting database dedicated to travel safety, raising awareness about domestic tour operator scams (including **Tour Edge** / **touredge** and **Tours Avenue** / **toursavenue** / **Tours Avenue Pvt Ltd**), contract breaches, and extreme passenger safety hazards in Pakistan's northern areas.
+An independent, non-commercial consumer protection portal and community reporting database dedicated to travel safety, raising awareness about domestic tour operator scams (including **Tour Edge** / **touredge**, **Tours Avenue** / **toursavenue**, and **Tour Avenue** / **touravenue**), contract breaches, and extreme passenger safety hazards in Pakistan's northern areas.
 
 This portal serves as a public ledger for travelers to verify tour operators, report fraud, and read first-hand verified case studies before booking tours to Hunza, Naran, Skardu, and Swat.
 
@@ -16,12 +16,12 @@ This portal serves as a public ledger for travelers to verify tour operators, re
 
 ---
 
-## 📖 The Case Study: Tour Edge (touredge) & Tours Avenue (toursavenue)
+## 📖 The Case Study: Tour Edge (touredge), Tours Avenue (toursavenue) & Tour Avenue (touravenue)
 
-This portal documents the specific operational breaches, financial misappropriations, and passenger safety hazards committed by **Tour Edge (Lahore)** (also known as **touredge**) and its sub-contracted operational front **Tours Avenue Pvt Ltd** (also known as **toursavenue**). 
+This portal documents the specific operational breaches, financial misappropriations, and passenger safety hazards committed by **Tour Edge (Lahore)** (also known as **touredge**) and its sub-contracted operational front **Tours Avenue Pvt Ltd** (also known as **toursavenue** and **Tour Avenue** / **touravenue**). 
 
 ### 1. Unnotified Sub-Contracting
-We booked a premium couple's deluxe package with Tour Edge (Lahore) for 1 Lac PKR. Without our knowledge or consent, Tour Edge outsourced the entire logistical execution to Tours Avenue. This is a common industry tactic where front agencies use a network of "sister companies" to dilute accountability and shift blame when issues occur.
+We booked a premium couple's deluxe package with Tour Edge (Lahore) for 1 Lac PKR. Without our knowledge or consent, Tour Edge outsourced the entire logistical execution to Tours Avenue (Tour Avenue). This is a common industry tactic where front agencies use a network of "sister companies" to dilute accountability and shift blame when issues occur.
 
 ### 2. Geolocational Gaslighting
 On departure day, the coaster departed Lahore 2 hours late. Having confirmed a Thokar Niaz Baig pickup, the tour operators moved it to Sabzazar last minute. To cover their latency, the tour guide dropped a false location pin ("Officers Colony") to waste our time and claim we were the ones late.
