@@ -1,0 +1,15 @@
+{
+  "name": "tour-scam-website",
+  "version": "1.0.0",
+  "description": "Public awareness website exposing tour scams with consumer forum integration.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
