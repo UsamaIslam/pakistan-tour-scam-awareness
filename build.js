@@ -16,7 +16,7 @@ function minifyCSS(css) {
 function minifyJS(js) {
     return js
         .replace(/\/\*[\s\S]*?\*\//g, '') // Strip block comments
-        .replace(/(^|[^/])\/\/[^\n]*/g, '$1') // Strip line comments
+        .replace(/(^|[\s;])\/\/[^\n]*/g, '$1') // Strip line comments
         .replace(/\s+/g, ' ')             // Collapse whitespace
         .trim();
 }
