@@ -913,8 +913,19 @@ footer {
 /* Responsive Styles */
 @media (max-width: 992px) {
     .dashboard-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
+    .dashboard-column {
+        display: contents;
+    }
+    #about-campaign { order: 1; }
+    #google-reviews-ledger { order: 2; }
+    #live-feed-card { order: 3; }
+    #bait-vs-reality { order: 4; }
+    #pre-booking-verification { order: 5; }
+    #take-action { order: 6; }
+    #submit-report-card { order: 7; }
     .hero-section {
         grid-template-columns: 1fr;
         text-align: center;
