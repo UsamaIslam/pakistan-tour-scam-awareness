@@ -1,6 +1,6 @@
 # Pakistan Tour Scam Awareness Portal
 
-An independent, non-commercial consumer protection portal and community reporting database dedicated to travel safety, raising awareness about domestic tour operator scams, contract breaches, and extreme passenger safety hazards in Pakistan's northern areas.
+An independent, non-commercial consumer protection portal and community reporting database dedicated to travel safety, raising awareness about domestic tour operator scams (including **Tour Edge** / **touredge** and **Tour Avenue** / **touravenue** / **Tours Avenue Pvt Ltd**), contract breaches, and extreme passenger safety hazards in Pakistan's northern areas.
 
 This portal serves as a public ledger for travelers to verify tour operators, report fraud, and read first-hand verified case studies before booking tours to Hunza, Naran, Skardu, and Swat.
 
@@ -16,9 +16,9 @@ This portal serves as a public ledger for travelers to verify tour operators, re
 
 ---
 
-## 📖 The Case Study: Tour Edge & Tour Avenue
+## 📖 The Case Study: Tour Edge (touredge) & Tour Avenue (touravenue)
 
-This portal documents the specific operational breaches, financial misappropriations, and passenger safety hazards committed by **Tour Edge (Lahore)** and its sub-contracted operational front **Tours Avenue Pvt Ltd**. 
+This portal documents the specific operational breaches, financial misappropriations, and passenger safety hazards committed by **Tour Edge (Lahore)** (also known as **touredge**) and its sub-contracted operational front **Tours Avenue Pvt Ltd** (also known as **touravenue**). 
 
 ### 1. Unnotified Sub-Contracting
 We booked a premium couple's deluxe package with Tour Edge (Lahore) for 1 Lac PKR. Without our knowledge or consent, Tour Edge outsourced the entire logistical execution to Tour Avenue. This is a common industry tactic where front agencies use a network of "sister companies" to dilute accountability and shift blame when issues occur.
